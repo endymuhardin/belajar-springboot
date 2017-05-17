@@ -5,7 +5,7 @@
     <groupId>com.muhardin.endy.belajar</groupId>
     <artifactId>belajar-springboot</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>belajar-springboot</name>
     <url>http://maven.apache.org</url>
@@ -17,7 +17,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.2.RELEASE</version>
+        <version>1.5.3.RELEASE</version>
     </parent>
 
     <dependencies>
@@ -42,6 +42,12 @@
             <scope>runtime</scope>
         </dependency>
         
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
